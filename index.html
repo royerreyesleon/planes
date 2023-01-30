@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snippet - GoSNippets</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="" rel="stylesheet" />
+    <style>
+        body {
+            background: #b1ea86;
+            padding: 30px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .pricingTable {
+            text-align: center;
+            background: #fff;
+            margin: 0 -15px;
+            box-shadow: 0 0 10px #ababab;
+            padding-bottom: 40px;
+            border-radius: 10px;
+            color: #cad0de;
+            transform: scale(1);
+            transition: all 0.5s ease 0s;
+        }
+
+        .pricingTable:hover {
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        .pricingTable .pricingTable-header {
+            padding: 40px 0;
+            background: #f5f6f9;
+            border-radius: 10px 10px 50% 50%;
+            transition: all 0.5s ease 0s;
+        }
+
+        .pricingTable:hover .pricingTable-header {
+            background: #ff9624;
+        }
+
+        .pricingTable .pricingTable-header i {
+            font-size: 50px;
+            color: #858c9a;
+            margin-bottom: 10px;
+            transition: all 0.5s ease 0s;
+        }
+
+        .pricingTable .price-value {
+            font-size: 35px;
+            color: #ff9624;
+            transition: all 0.5s ease 0s;
+        }
+
+        .pricingTable .month {
+            display: block;
+            font-size: 14px;
+            color: #cad0de;
+        }
+
+        .pricingTable:hover .month,
+        .pricingTable:hover .price-value,
+        .pricingTable:hover .pricingTable-header i {
+            color: #fff;
+        }
+
+        .pricingTable .heading {
+            font-size: 24px;
+            color: #ff9624;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .pricingTable .pricing-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .pricingTable .pricing-content ul li {
+            line-height: 30px;
+            color: #a7a8aa;
+        }
+
+        .pricingTable .pricingTable-signup a {
+            display: inline-block;
+            font-size: 15px;
+            color: #fff;
+            padding: 10px 35px;
+            border-radius: 20px;
+            background: #ffa442;
+            text-transform: uppercase;
+            transition: all 0.3s ease 0s;
+        }
+
+        .pricingTable .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #ffa442;
+        }
+
+        .pricingTable.blue .heading,
+        .pricingTable.blue .price-value {
+            color: #4b64ff;
+        }
+
+        .pricingTable.blue .pricingTable-signup a,
+        .pricingTable.blue:hover .pricingTable-header {
+            background: #4b64ff;
+        }
+
+        .pricingTable.blue .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #4b64ff;
+        }
+
+        .pricingTable.red .heading,
+        .pricingTable.red .price-value {
+            color: #ff4b4b;
+        }
+
+        .pricingTable.red .pricingTable-signup a,
+        .pricingTable.red:hover .pricingTable-header {
+            background: #ff4b4b;
+        }
+
+        .pricingTable.red .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #ff4b4b;
+        }
+
+        .pricingTable.green .heading,
+        .pricingTable.green .price-value {
+            color: #40c952;
+        }
+
+        .pricingTable.green .pricingTable-signup a,
+        .pricingTable.green:hover .pricingTable-header {
+            background: #40c952;
+        }
+
+        .pricingTable.green .pricingTable-signup a:hover {
+            box-shadow: 0 0 10px #40c952;
+        }
+
+        .pricingTable.blue:hover .price-value,
+        .pricingTable.green:hover .price-value,
+        .pricingTable.red:hover .price-value {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 990px) {
+            .pricingTable {
+                margin: 0 0 20px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</head>
+
+<body oncontextmenu="return false" class="snippet-body">
+    <div class="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <i class="fa fa-adjust"></i>
+                            <div class="price-value">
+                                $ 5,500.00 MXN <span class="month">PAGO ÚNICO</span>
+                            </div>
+                        </div>
+                        <h3 class="heading">PLAN BÁSICO</h3>
+
+                        <p class="p-3">
+                            Nueva tendencia en internet, ideal para pequeñas empresas que
+                            requieran anunciar sus servicios y/o productos de forma limpia,
+                            facil y llamativa.
+                        </p>
+
+                        <div class="pricing-content">
+                            <ul>
+                                <li><b>1</b> sola página (landing page)</li>
+                                <li>Diseño responsivo</li>
+                                <li>Detalles de servicios o productos</li>
+                                <li>Información de la empresa</li>
+                                <li><b>1</b> año de hospedaje web (gratis)</li>
+                                <li><b>1</b> año de dominio web (gratis)</li>
+                            </ul>
+                        </div>
+
+                        <p class="small">
+                            Entrega 7 a 8 días hábiles
+                            <br />
+                            Forma de pago 50 % anticipo - 50 % a la entrega
+                        </p>
+
+                        <div class="pricingTable-signup">
+                            <a href="https://api.whatsapp.com/send?phone=9931064490&text=Me%20interesa%20el%20plan%20BASICO">ME INTERESA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="pricingTable green">
+                        <div class="pricingTable-header">
+                            <i class="fa fa-briefcase"></i>
+                            <div class="price-value">
+                                $ 7,500.00 MXN <span class="month">PAGO ÚNICO</span>
+                            </div>
+                        </div>
+                        <h3 class="heading">PLAN INTERMEDIO</h3>
+
+                        <p class="p-3">
+                            Ideal para medianas empresas que necesitan presencia en internet
+                            para mostrar sus servicios y productos, generando contactos
+                            inmediatos.
+                        </p>
+
+                        <div class="pricing-content">
+                            <ul>
+                                <li><b>5</b> páginas profesionales</li>
+                                <li>Diseño responsivo</li>
+                                <li>Galería de imágenes y/o videos</li>
+                                <li>Detalles de servicios o productos</li>
+                                <li>Formulario de contacto</li>
+                                <li>Mapa de ubIcación</li>
+                                <li>Información de la empresa</li>
+                                <li><b>1</b> año de hospedaje web (gratis)</li>
+                                <li><b>1</b> año de dominio web (gratis)</li>
+                                <li><b>1</b> año de copias de seguridad diarias</li>
+                            </ul>
+                        </div>
+
+                        <p class="small">
+                            Entrega 12 a 15 días hábiles
+                            <br />
+                            Forma de pago 50 % anticipo - 50 % a la entrega
+                        </p>
+
+                        <div class="pricingTable-signup">
+                            <a href="https://api.whatsapp.com/send?phone=9931064490&text=Me%20interesa%20el%20plan%20INTERMEDIO">ME INTERESA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header">
+                            <i class="fa fa-diamond"></i>
+                            <div class="price-value">
+                                $ + <span class="month">PAGO ÚNICO <br>
+                                        PRECIO SUJETO A REQUERIMIENTOS
+                                    </span>
+                            </div>
+                        </div>
+                        <h3 class="heading">PLAN AVANZADO</h3>
+
+                        <p class="p-3">
+                            Ideal para empresas que requieran un servicio
+                            profesional para lograr sus objetivos.
+                        </p>
+
+                        <div class="pricing-content">
+                            <ul>
+                                <li>Desarrollo de servicios a la medida</li>
+                                <li>Diseño responsivo</li>
+                                <li><b>1</b> año de hospedaje web (gratis)</li>
+                                <li><b>1</b> año de dominio web (gratis)</li>
+                                <li><b>1</b> año de copias de seguridad diarias</li>
+                            </ul>
+                        </div>
+
+                        <p class="small">
+                            Entrega según los requerimientos del cliente
+                            <br />
+                            Forma de pago 50 % anticipo - 50 % a la entrega
+                        </p>
+
+                        <div class="pricingTable-signup">
+                            <a href="https://api.whatsapp.com/send?phone=9931064490&text=Me%20interesa%20el%20plan%20AVANZADO">ME INTERESA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="pricingTable red">
+                        <div class="pricingTable-header">
+                            <i class="fa fa-cube"></i>
+                            <div class="price-value">
+                                1ER MES GRATIS
+                                <span class="month">PAGO x MES <br />
+                                    SOLO PAGAS HOSPEDAJE
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="heading">PLAN RENTA</h3>
+
+                        <p class="p-3">
+                            Ideal para financiar tu sitio al mismo tiempo que generas
+                            ingresos
+                        </p>
+
+                        <div class="pricing-content">
+                            <ul>
+                                <li><b>BÁSICO</b> $ 1,250 MXN x 11 MESES</li>
+                                <li><b>INTERMEDIO</b> $ 1,500 MXN x 11 MESES</li>
+                                <li><b>AVANZADO</b> $ 2,000 MXN x 11 MESES</li>
+                            </ul>
+                        </div>
+                        <div class="pricingTable-signup">
+                            <a href="https://api.whatsapp.com/send?phone=9931064490&text=Me%20interesa%20el%20plan%20RENTA">ME INTERESA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"></script>
+</body>
+
+</html>
